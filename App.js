@@ -65,13 +65,13 @@ function App() {
                {/* <p>Feels-Like{weather.main.feels_like}</p> */}
               <div className='box1'>
                   <p>Humidity: {weather.main.humidity}</p>
-                  <p>Max-Temperature: {weather.main.temp_max}</p>
-                  <p>Min-Temperature: {weather.main.temp_min}</p>
+                  <p>Max-Temperature: {weather.main.temp_max}°c</p>
+                  <p>Min-Temperature: {weather.main.temp_min}°c</p>
               </div>
               <div className='box2'>
                   <p>Description: {weather.weather[0].main}</p>
-                  <p>Wind Direction: {weather.wind.deg}°c</p>
-                  <p>Wind Speed: {weather.wind.speed}</p>
+                  <p>Wind Direction: {weather.wind.deg}°</p>
+                  <p>Wind Speed: {weather.wind.speed}m/s</p>
               </div>
            </div>
           </div>
