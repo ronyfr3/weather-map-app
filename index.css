@@ -6,8 +6,6 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
   overflow-x: hidden;
   text-align: center;
   font-family: 'Fraunces', serif;
@@ -33,7 +31,7 @@ body {
 .des-weather{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .des-weather p{
    font-size: 15px;
@@ -44,34 +42,51 @@ body {
    margin-top: 5px;
 }
 .des-weather .box1{
-  position: relative;
+ 
   width: 250px;
-  height: 130px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   background-color: rgba(128, 103, 103, 0.2);
   border-radius: 16px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   color: #FFF;
   text-align: center;
   box-shadow: 1px 6px rgba(0, 0, 0, 0.3);
 }
 .des-weather .box2{
-  position: relative;
+ 
   width: 250px;
-  height: 130px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   background-color: rgba(128, 103, 103, 0.2);
   border-radius: 16px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   color: #FFF;
   text-align: center;
   box-shadow: 1px 6px rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width:480px){
+  .box1{
+    transform: translateX(-10px);
+ }
+  .box2{
+    transform: translateX(10px);
+ }
+ .des-weather p{
+  transform: translateY(-13px);
+   font-size: 15px;
+   font-weight: 700;
+   color: white;
+   letter-spacing: 1px;
+   word-spacing: 1px;
+   margin-top: 5px;
+}
 }
 .btn{
   position: relative;
